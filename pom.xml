@@ -44,5 +44,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<repositories>
+           <repository>
+               <snapshots>
+                   <enabled>false</enabled>
+               </snapshots>
+               <id>bintray-clevercloud-maven</id>
+               <name>bintray</name>
+               <url>https://dl.bintray.com/clevercloud/maven/</url>
+           </repository>
+       </repositories>
 
 </project>
