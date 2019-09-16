@@ -4,7 +4,7 @@ node {
     def rtGradle
     
     stage ('Build') {
-        git url: 'https://github.com/CleverCloud/demo-spring-boot-kotlin-statsd.git'
+        git url: 'https://github.com/ldoguin/mvn-jenkins-demo.git'
     }
  
     stage ('Artifactory configuration') {
