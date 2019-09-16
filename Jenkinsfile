@@ -11,7 +11,7 @@ node {
         server = Artifactory.server "sprint0-artifactory"
         rtMaven = Artifactory.newMavenBuild()
         rtMaven.tool = "mvn" // Tool name from Jenkins configuration
-        rtMaven.deployer releaseRepo: 'libs-release-local', snapshotRepo: 'libs-snapshot-local', server: server
+        rtMaven.deployer releaseRepo: 'example-repo-local', snapshotRepo: 'example-repo-local', server: server
         buildInfo = Artifactory.newBuildInfo()
     }
  
