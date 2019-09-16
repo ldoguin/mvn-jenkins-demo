@@ -54,6 +54,11 @@
                <name>bintray</name>
                <url>https://dl.bintray.com/clevercloud/maven/</url>
            </repository>
+	    <repository> 
+		<id>repository.spring.release</id> 
+		<name>Spring GA Repository</name> 
+		<url>http://repo.spring.io/release</url> 
+	    </repository>
        </repositories>
 
 </project>
