@@ -1,0 +1,12 @@
+name: 'Clever Tools Action'
+description: 'Automate your GitHub workflows with Clever Tools.'
+inputs:
+  inlineScript:
+    description: 'Specify the command here'
+    required: true
+branding:
+  icon: 'login.svg'
+  color: 'red'
+runs:
+  using: docker
+  image: docker://clevercloud/clever-tools:latest
