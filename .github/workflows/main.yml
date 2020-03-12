@@ -20,7 +20,7 @@ jobs:
           ref: ${{ steps.prcomm.outputs.SHA }}
       - name: Clever tools
         if: steps.prcomm.outputs.BOOL_TRIGGERED == 'true'
-        uses: ldoguin/mvn-jenkins-demo@v1
+        uses: ldoguin/mvn-jenkins-demo@master
         with:
           inlineScript: |
             profile
