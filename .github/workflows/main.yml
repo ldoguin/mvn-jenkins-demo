@@ -18,7 +18,12 @@ jobs:
         uses: actions/checkout@master
         with:
           ref: ${{ steps.prcomm.outputs.SHA }}
-
+      - name: Clever tools
+        if: steps.prcomm.outputs.BOOL_TRIGGERED == 'true'
+        uses: ldoguin/mvn-jenkins-demo@v1
+        with:
+          inlineScript: |
+            profile
         # This step is a toy example that illustrates how you can use outputs from the pr-command action
       - name: print variables
         if: steps.prcomm.outputs.BOOL_TRIGGERED == 'true'
