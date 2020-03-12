@@ -10,3 +10,5 @@ branding:
 runs:
   using: docker
   image: docker://clevercloud/clever-tools:latest
+  args:
+    - ${{ inputs.inlineScript }}
