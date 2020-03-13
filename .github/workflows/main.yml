@@ -15,6 +15,8 @@ jobs:
       - name: Clever tools
         if: steps.prcomm.outputs.BOOL_TRIGGERED == 'true'
         uses: ldoguin/mvn-jenkins-demo@master
+        env:
+          CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
+          CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
         with:
-          inlineScript: |
-            profile
+          inlineScript: profile
