@@ -19,4 +19,4 @@ jobs:
           CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
           CLEVER_SECRET: ${{ secrets.CLEVER_SECRET }}
         with:
-          inlineScript: profile
+          inlineScript: create --type node aa
